@@ -8,6 +8,7 @@ import com.example.mvvmexamplekotlin.R
 import com.example.mvvmexamplekotlin.domain.FrutasUseCase
 import com.example.mvvmexamplekotlin.ui.model.Frutas
 import com.example.mvvmexamplekotlin.viewmodel.MyViewModel
+import com.example.mvvmexamplekotlin.viewmodel.MyViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     fun setupViewModel(){
         // Enlazamos objeto viewv Model con la clase MyViewModel:
         // En el video dice que este es un observer.
-        viewModel = ViewModelProviders.of(this).get(MyViewModel::class.java)
+        viewModel = ViewModelProviders.of(this,MyViewModelFactory(FrutasUseCase())).get(MyViewModel::class.java)
 
         // Suscribirnos o observar al livedata:
         val frutasObserver = Observer<List<Frutas>> {

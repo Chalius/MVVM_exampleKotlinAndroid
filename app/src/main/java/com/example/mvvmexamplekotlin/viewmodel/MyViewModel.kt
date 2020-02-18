@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel
 import com.example.mvvmexamplekotlin.domain.FrutasUseCase
 import com.example.mvvmexamplekotlin.ui.model.Frutas
 
-class MyViewModel : ViewModel() {
+class MyViewModel(val frutasUseCase: FrutasUseCase) : ViewModel() {
 
-    val frutasUseCase = FrutasUseCase()
+    //val frutasUseCase = FrutasUseCase()
 
     // el mutablelivedata esta escuchadno por una lista de frutas.
     private val listData = MutableLiveData<List<Frutas>>()

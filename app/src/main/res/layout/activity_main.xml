@@ -31,9 +31,9 @@
         android:id="@+id/tv1_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cargando lista..."
-        android:gravity="center"
         android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Presione botones..."
         android:textColor="@android:color/holo_blue_light"
         android:textSize="15dp"
 
