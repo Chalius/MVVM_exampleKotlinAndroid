@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="PROBANDO MVVM"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/bt_cargar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cargar lista" />
+
+    <Button
+        android:id="@+id/bt_borrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="borrar lista" />
+
+    <TextView
+        android:id="@+id/tv1_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargando lista..."
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="15dp"
+
+        />
+
+</LinearLayout>
